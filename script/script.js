@@ -4,4 +4,4 @@ grid.classList.add('.add');
 grid.classList.remove('.remove');
 container.appendChild(grid);
 
-grid.setAttribute('style', 'background: blue; width: 200px; height: 200px')
+grid.setAttribute('style', 'background: blue; width: 200px; height: 200px');
