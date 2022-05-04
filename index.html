@@ -8,26 +8,27 @@
     <title>Etch a Sketch</title>
 </head>
 <body>
-    <h1>
-        ETCTH A SKETCH
-    </h1>
-
-    <div class="grid-container">
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
+    <div class="flex-container">
+        <div class="title"><h1>Etch a Sketch</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('white')">Eraser</button>
+                <button onclick="changeColor('grey')">Grey</button>
+                <button onclick="changeColor('random')">Rainbow</button>
+                <button onclick="location.reload()">Reset</button>
+            </div>
+            <div>
+                <input 
+                type="text" 
+                placeholder="Size of Board" 
+                value="16" onchange="changeSize(this.value)"
+                />
+                <button>Change Size</button>
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <div class="room" id="living-room">Living Room</div>
-        <div class="room" id="kitchen">Kitchen</div>
-        <div class="room" id="bedroom">Bedroom</div>
-        <div class="room" id="bathroom">Bathroom</div>
-        <div class="room" id="closet">Closet</div>
-        
-    </div>
-    <!-- <script src="script/script.js"></script> -->
+    <script src="script/script.js"></script>
 </body>
 </html>
