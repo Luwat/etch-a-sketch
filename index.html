@@ -12,21 +12,23 @@
         <div class="title"><h1>Etch a Sketch</h1></div>
         <div class="content">
             <div class="board"></div>
-            <div class="buttons">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('white')">Eraser</button>
-                <button onclick="changeColor('grey')">Grey</button>
-                <button onclick="changeColor('random')">Rainbow</button>
-                <button onclick="location.reload()">Reset</button>
-            </div>
-            <div>
-                <input 
-                type="text" 
-                placeholder="Size of Board" 
-                value="16" onchange="changeSize(this.value)"
-                />
-                <button>Change Size</button>
-            </div>
+            <div class="inputs">
+                <div class="buttons">
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('white')">Eraser</button>
+                    <button onclick="changeColor('grey')">Grey</button>
+                    <button onclick="changeColor('random')">Rainbow</button>
+                    <button onclick="location.reload()">Clear</button>
+                </div>
+                <div>
+                    <input 
+                    type="text" 
+                    placeholder="Size of Board" 
+                    value="16" onchange="changeSize(this.value)"
+                    />
+                    <button>Change Size</button>
+                </div>
+            </div>    
         </div>
     </div>
     <script src="script/script.js"></script>
